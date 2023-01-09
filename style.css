@@ -266,13 +266,13 @@ body
   top: calc(100% - 1px);
   clip-path: var(--clip-path-1);
   background-color: var(--bg-oxford-blue);
-  transition: clip-path 500ms var(--clip-out);
+  transition: clip-path 500ms var(--cubic-out);
 }
 
 .navbar.active
 {
-  clip-path: var(--clip-path-2);
   visibility: visible;
+  clip-path: var(--clip-path-2);
 }
 
 .navbar-link
@@ -293,9 +293,6 @@ body
 {
   border-block-end: 1px solid var(--border-space-cadet);
 }
-
-
-
 
 /*-----------------------------------*\
   #HERO
