@@ -24,7 +24,7 @@ const navClose = function () {
 
 addEventOnElements(navLinks, "click", navClose);
 
-const header = document.querySelector("[data-header]");
+/*const header = document.querySelector("[data-header]");
 
 const activeElement = function () {
     if (window.scrollY > 100) {
@@ -35,4 +35,4 @@ const activeElement = function () {
     }
 }
 
-window.addEventListener("scroll", activeElement);
+window.addEventListener("scroll", activeElement);*/
