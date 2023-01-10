@@ -1,14 +1,14 @@
-"use strict";
+'use strict';
 
 const addEventOnElements = function (elements, eventType, callback) {
-    for (let i = 0; i < elements.length; i++) {
+    for (let i = 0 , len = elements.length; i < len; i++) {
         elements[i].addEventListener(eventType, callback);
     }
 }
 
 const navbar = document.querySelector("[data-navbar]");
 const navToggler = document.querySelector("[data-nav-toggler]");
-const navLinks = document.querySelector("[data-nav-link]");
+const navLinks = document.querySelectorAll("[data-nav-link]");
 
 const toggleNav = function () {
     navbar.classList.toggle("active");
@@ -24,7 +24,7 @@ const navClose = function () {
 
 addEventOnElements(navLinks, "click", navClose);
 
-/*const header = document.querySelector("[data-header]");
+const header = document.querySelector("[data-header]");
 
 const activeElement = function () {
     if (window.scrollY > 100) {
@@ -35,4 +35,14 @@ const activeElement = function () {
     }
 }
 
-window.addEventListener("scroll", activeElement);*/
+window.addEventListener("scroll", activeElement);
+
+
+const buttons = document.querySelectorAll("[data-btn]");
+
+const buttonHoverRipple = function (event) {
+    this.style.setProperty("--top", `${event.offsetY}px`);
+    this.style.setProperty("--left", `${event.offsetX}px`);
+}
+
+addEventOnElements(buttons, "mousemove", buttonHoverRipple);
