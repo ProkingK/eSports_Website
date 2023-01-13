@@ -2,509 +2,532 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="title" content="ProkingK eLeague">
-    <meta name="description" content="This is a eSports website for ProkingK Studios">
+  <meta name="title" content="ProkingK eLeague">
+  <meta name="description" content="This is a eSports website for ProkingK Studios">
 
-    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700&family=Work+Sans:wght@600&display=swap"
-        rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700&family=Work+Sans:wght@600&display=swap"
+    rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 
-    <link rel="preload" as="image" href="images/hero-banner.png">
-    <link rel="preload" as="image" href="images/hero-banner-bg.png">
+  <link rel="preload" as="image" href="images/hero-banner.png">
+  <link rel="preload" as="image" href="images/hero-banner-bg.png">
 
-    <title>ProkingK eLeague</title>
+  <title>ProkingK eLeague</title>
 </head>
 
 <body id="#top">
 
-    <header class="header active" data-header>
+  <header class="header active" data-header>
 
+    <div class="container">
+      <a href="" class="logo">
+        <img src="images/ProkingK logo.png" width="80" height="80" alt="prokingk  logo">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link">home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#tournament" class="navbar-link">tournament</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#news" class="navbar-link">news</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#contact" class="navbar-link">contact</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <a href="#" class="btn" data-btn>Sign Up</a>
+
+      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+
+      </button>
+    </div>
+
+  </header>
+
+
+  <main>
+    <article>
+
+      <!-- MAIN IMAGE -->
+
+      <div class="main-image has-before" id="home">
         <div class="container">
-            <a href="" class="logo">
-                <img src="images/logo.svg" width="110" height="53" alt="prokingk studios logo">
-            </a>
+          <p class="section-subtitle">Titans Clash</p>
 
-            <nav class="navbar" data-navbar>
+          <h1 class="h1 title main-image-title">The Best of the Best <br> Go <br> Head to Head</h1>
 
-                <ul class="navbar-list">
+          <a href="#" class="btn" data-btn>Watch Live</a>
 
-                    <li class="navbar-item">
-                        <a href="#home" class="navbar-link">home</a>
-                    </li>
+          <div class="main-image-banner">
+            <img src="images/hero-banner.png" width="850" height="414" alt="top game protaganists" class="w-100">
 
-                    <li class="navbar-item">
-                        <a href="#tournament" class="navbar-link">tournament</a>
-                    </li>
-
-                    <li class="navbar-item">
-                        <a href="#news" class="navbar-link">news</a>
-                    </li>
-
-                    <li class="navbar-item">
-                        <a href="#contact" class="navbar-link">contact</a>
-                    </li>
-
-                </ul>
-
-            </nav>
-
-            <a href="#" class="btn" data-btn>Sign Up</a>
-
-            <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
-
-                <span class="line line-1"></span>
-                <span class="line line-2"></span>
-                <span class="line line-3"></span>
-
-            </button>
+            <img src="images/hero-banner-bg.png" alt="main-image background" class="main-image-bg">
+          </div>
 
         </div>
-    </header>
+      </div>
 
+      <!-- UPCOMING MATCHES -->
 
-    <main>
-        <article>
+      <section class="section upcoming" aria-labelledby="upcoming-label" id="tournament">
+        <div class="container">
 
-            <div class="hero has-before" id="home">
-                <div class="container">
+          <p class="section-subtitle" id="upcoming-label" data-reveal="bottom">Upcoming Matches</p>
 
-                    <p class="section-subtitle">Enjoy The Matchups</p>
+          <h2 class="h2 section-title" data-reveal="bottom">
+            Gaming Gods' Summit <br> <span class="span">Tournament</span>
+          </h2>
 
-                    <h1 class="h1 title hero-title">Epic Games Made For True Gamers!</h1>
+          <p class="section-text" data-reveal="bottom">
+            The top 6 teams go battle each other in a 
+            best out of 5 for the title of World Champion!
+          </p>
 
-                    <a href="#" class="btn" data-btn>Join With Us</a>
+          <ol class="upcoming-list">
 
-                    <div class="hero-banner">
-                        <img src="images/hero-banner.png" width="850" height="414" alt="hero banner" class="w-100">
+            <!-- Team Liquid vs TSM -->
 
-                        <img src="images/hero-banner-bg.png" alt="hero background" class="hero-banner-bg">
-                    </div>
+            <li class="upcoming-item">
+              <div class="upcoming-card left has-before" data-reveal="left">
+                <img src="images/team-liquid-logo.png" loading="lazy" alt="team liquid logo"
+                  class="card-banner">
 
-                </div>
-            </div>
+                <h3 class="h3 card-title">Team Liquid</h3>
 
-            <section class="section upcoming" aria-labelledby="upcoming-label" id="tournament">
-                <div class="container">
-                    <p class="section-subtitle" id="upcoming-label" data-reveal="bottom">Upcoming Matches</p>
+                <div class="card-meta">#5 World Rank</div>
+              </div>
 
-                    <h2 class="h2 section-title" data-reveal="bottom">
-                        Battles Extreme Masters <span class="span">Tournament</span>
-                    </h2>
+              <div class="upcoming-time" data-reveal="bottom">
+                <time class="time" datetime="10:00">12:00</time>
 
-                    <p class="section-text" data-reveal="bottom">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                        Dolorum cupiditate, numquam fuga fugiat quas iusto accusantium
-                    </p>
+                <time class="date" datetime="2023-05-25">28 April 2024</time>
 
-                    <ol class="upcoming-list">
-
-                        <li class="upcoming-item">
-                            <div class="upcoming-card left has-before" data-reveal="left">
-                                <img src="images/team-logo-1.png" width="86" height="81" loading="lazy" alt="Purple Death Cadets" class="card-banner">
-
-                                <h3 class="h3 card-title">Purple Death Cadets</h3>
-
-                                <div class="card-meta">Group 04 | Match 06</div>
-                            </div>
-
-                            <div class="upcoming-time" data-reveal="bottom">
-                                <time class="time" datetime="10:00">10:00</time>
-
-                                <time class="date" datetime="2023-05-25">25TH May 2024</time>
-
-                                <div class="social-wrapper">
-                                    <a href="#" class="social-link">
-                                        <ion-icon name="logo-youtube"></ion-icon>
-                                    </a>
-
-                                    <a href="#" class="social-link">
-                                        <ion-icon name="logo-twitch"></ion-icon>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="upcoming-card right has-before" data-reveal="right">
-                                <img src="images/team-logo-2.png" width="86" height="81" loading="lazy" alt="Purple Death Cadets" class="card-banner">
-
-                                <h3 class="h3 card-title">Purple Death Cadets</h3>
-
-                                <div class="card-meta">Group 04 | Match 06</div>
-                            </div>
-                        </li>
-
-                        <li class="upcoming-item">
-                            <div class="upcoming-card left has-before" data-reveal="left">
-                                <img src="images/team-logo-3.png" width="86" height="81" loading="lazy" alt="Purple Death Cadets" class="card-banner">
-
-                                <h3 class="h3 card-title">Purple Death Cadets</h3>
-
-                                <div class="card-meta">Group 04 | Match 06</div>
-                            </div>
-
-                            <div class="upcoming-time" data-reveal="bottom">
-                                <time class="time" datetime="10:00">10:00</time>
-
-                                <time class="date" datetime="2023-05-25">25TH May 2024</time>
-
-                                <div class="social-wrapper">
-                                    <a href="#" class="social-link">
-                                        <ion-icon name="logo-youtube"></ion-icon>
-                                    </a>
-
-                                    <a href="#" class="social-link">
-                                        <ion-icon name="logo-twitch"></ion-icon>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="upcoming-card right has-before" data-reveal="right">
-                                <img src="images/team-logo-4.png" width="86" height="81" loading="lazy" alt="Purple Death Cadets" class="card-banner">
-
-                                <h3 class="h3 card-title">Purple Death Cadets</h3>
-
-                                <div class="card-meta">Group 04 | Match 06</div>
-                            </div>
-                        </li>
-
-                        <li class="upcoming-item">
-                            <div class="upcoming-card left has-before" data-reveal="left">
-                                <img src="images/team-logo-5.png" width="86" height="81" loading="lazy" alt="Purple Death Cadets" class="card-banner">
-
-                                <h3 class="h3 card-title">Purple Death Cadets</h3>
-
-                                <div class="card-meta">Group 04 | Match 06</div>
-                            </div>
-
-                            <div class="upcoming-time" data-reveal="bottom">
-                                <time class="time" datetime="10:00">10:00</time>
-
-                                <time class="date" datetime="2023-05-25">25TH May 2024</time>
-
-                                <div class="social-wrapper">
-                                    <a href="#" class="social-link">
-                                        <ion-icon name="logo-youtube"></ion-icon>
-                                    </a>
-
-                                    <a href="#" class="social-link">
-                                        <ion-icon name="logo-twitch"></ion-icon>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="upcoming-card right has-before" data-reveal="right">
-                                <img src="images/team-logo-6.png" width="86" height="81" loading="lazy" alt="Purple Death Cadets" class="card-banner">
-
-                                <h3 class="h3 card-title">Purple Death Cadets</h3>
-
-                                <div class="card-meta">Group 04 | Match 06</div>
-                            </div>
-                        </li>
-
-                    </ol>
-
-                </div>
-            </section>
-
-            <section class="section news" aria-label="our latest news" id="news">
-                <div class="container">
-        
-                  <p class="section-subtitle" data-reveal="bottom">What's On Our Mind</p>
-        
-                  <h2 class="h2 section-title" data-reveal="bottom">
-                    News And <span class="span">Headlines</span>
-                  </h2>
-        
-                  <p class="section-text" data-reveal="bottom">
-                    Our success in creating business solutions is due in large part to our talented and highly committed team.
-                  </p>
-        
-                  <ul class="news-list">
-        
-                    <li data-reveal="bottom">
-                      <div class="news-card">
-        
-                        <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
-                          <img src="images/news-1.jpg" width="600" height="400" loading="lazy"
-                            alt="Innovative Business All Over The World." class="img-cover">
-                        </figure>
-        
-                        <div class="card-content">
-        
-                          <a href="#" class="card-tag">Business</a>
-        
-                          <ul class="card-meta-list">
-        
-                            <li class="card-meta-item">
-                              <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
-        
-                              <time class="card-meta-text" datetime="2022-01-01">Jan 01 2022</time>
-                            </li>
-        
-                            <li class="card-meta-item">
-                              <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
-        
-                              <p class="card-meta-text">Elliot Alderson</p>
-                            </li>
-        
-                          </ul>
-        
-                          <h3 class="h3">
-                            <a href="#" class="card-title">Innovative Business All Over The World.</a>
-                          </h3>
-        
-                          <p class="card-text">
-                            Financial experts support or help you to to find out which way you can raise your funds more...
-                          </p>
-        
-                          <a href="#" class="link has-before">Read More</a>
-        
-                        </div>
-        
-                      </div>
-                    </li>
-        
-                    <li data-reveal="bottom">
-                      <div class="news-card">
-        
-                        <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
-                          <img src="images/news-2.jpg" width="600" height="400" loading="lazy"
-                            alt="How To Start Initiating An Startup In Few Days." class="img-cover">
-                        </figure>
-        
-                        <div class="card-content">
-        
-                          <a href="#" class="card-tag">Startup</a>
-        
-                          <ul class="card-meta-list">
-        
-                            <li class="card-meta-item">
-                              <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
-        
-                              <time class="card-meta-text" datetime="2022-01-01">Jan 01 2022</time>
-                            </li>
-        
-                            <li class="card-meta-item">
-                              <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
-        
-                              <p class="card-meta-text">Elliot Alderson</p>
-                            </li>
-        
-                          </ul>
-        
-                          <h3 class="h3">
-                            <a href="#" class="card-title">How To Start Initiating An Startup In Few Days.</a>
-                          </h3>
-        
-                          <p class="card-text">
-                            Financial experts support or help you to to find out which way you can raise your funds more...
-                          </p>
-        
-                          <a href="#" class="link has-before">Read More</a>
-        
-                        </div>
-        
-                      </div>
-                    </li>
-        
-                    <li data-reveal="bottom">
-                      <div class="news-card">
-        
-                        <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
-                          <img src="images/news-3.jpg" width="600" height="400" loading="lazy"
-                            alt="Financial Experts Support Help You To Find Out." class="img-cover">
-                        </figure>
-        
-                        <div class="card-content">
-        
-                          <a href="#" class="card-tag">Finance</a>
-        
-                          <ul class="card-meta-list">
-        
-                            <li class="card-meta-item">
-                              <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
-        
-                              <time class="card-meta-text" datetime="2022-01-01">Jan 01 2022</time>
-                            </li>
-        
-                            <li class="card-meta-item">
-                              <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
-        
-                              <p class="card-meta-text">Elliot Alderson</p>
-                            </li>
-        
-                          </ul>
-        
-                          <h3 class="h3">
-                            <a href="#" class="card-title">Financial Experts Support Help You To Find Out.</a>
-                          </h3>
-        
-                          <p class="card-text">
-                            Financial experts support or help you to to find out which way you can raise your funds more...
-                          </p>
-        
-                          <a href="#" class="link has-before">Read More</a>
-        
-                        </div>
-        
-                      </div>
-                    </li>
-        
-                  </ul>
-        
-                </div>
-              </section>
-
-
-        </article>
-    </main>
-
-    <footer class="footer">
-
-        <div class="section footer-top">
-          <div class="container">
-    
-            <div class="footer-brand">
-    
-              <a href="#" class="logo">
-                <img src="images/logo.svg" width="150" height="73" loading="lazy" alt="Unigine logo">
-              </a>
-    
-              <p class="footer-text">
-                Our success in creating business solutions is due in large part to our talented and highly committed team.
-              </p>
-    
-              <ul class="social-list">
-    
-                <li>
-                  <a href="#" class="social-link">
-                    <ion-icon name="logo-facebook"></ion-icon>
-                  </a>
-                </li>
-    
-                <li>
-                  <a href="#" class="social-link">
-                    <ion-icon name="logo-twitter"></ion-icon>
-                  </a>
-                </li>
-    
-                <li>
-                  <a href="#" class="social-link">
-                    <ion-icon name="logo-instagram"></ion-icon>
-                  </a>
-                </li>
-    
-                <li>
+                <div class="social-wrapper">
                   <a href="#" class="social-link">
                     <ion-icon name="logo-youtube"></ion-icon>
                   </a>
-                </li>
-    
-              </ul>
-    
-            </div>
-    
-            <div class="footer-list">
-    
-              <p class="title footer-list-title has-after">Usefull Links</p>
-    
-              <ul>
-    
-                <li>
-                  <a href="#" class="footer-link">Tournaments</a>
-                </li>
-    
-                <li>
-                  <a href="#" class="footer-link">Help Center</a>
-                </li>
-    
-                <li>
-                  <a href="#" class="footer-link">Privacy and Policy</a>
-                </li>
-    
-                <li>
-                  <a href="#" class="footer-link">Terms of Use</a>
-                </li>
-    
-                <li>
-                  <a href="#" class="footer-link">Contact Us</a>
-                </li>
-    
-              </ul>
-    
-            </div>
-    
-            <div class="footer-list">
-    
-              <p class="title footer-list-title has-after">Contact Us</p>
-    
-              <div class="contact-item">
-                <span class="span">Location:</span>
-    
-                <address class="contact-link">
-                  153 Williamson Plaza, Maggieberg, MT 09514
-                </address>
+
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-twitch"></ion-icon>
+                  </a>
+                </div>
               </div>
-    
-              <div class="contact-item">
-                <span class="span">Join Us:</span>
-    
-                <a href="mailto:Info@unigine.com" class="contact-link">Info@unigine.com</a>
+
+              <div class="upcoming-card right has-before" data-reveal="right">
+                <img src="images/tsm-logo.png" loading="lazy" alt="tsm logo"
+                  class="card-banner">
+
+                <h3 class="h3 card-title">TSM</h3>
+
+                <div class="card-meta">#2 World Rank</div>
               </div>
-    
-              <div class="contact-item">
-                <span class="span">Phone:</span>
-    
-                <a href="tel:+12345678910" class="contact-link">+1 (234) 567-8910</a>
+            </li>
+
+            <!-- Cloud 9 vs Complexity -->
+
+            <li class="upcoming-item">
+              <div class="upcoming-card left has-before" data-reveal="left">
+                <img src="images/cloud-9-logo.png" loading="lazy" alt="cloud 9 logo"
+                  class="card-banner">
+
+                <h3 class="h3 card-title">Cloud 9</h3>
+
+                <div class="card-meta">#4 World Rank</div>
               </div>
-    
-            </div>
-    
-            <div class="footer-list">
-    
-              <p class="title footer-list-title has-after">Newsletter Signup</p>
-    
-              <form action="./index.html" method="get" class="footer-form">
-                <input type="email" name="email_address" required placeholder="Your Email" autocomplete="off"
-                  class="input-field">
-    
-                <button type="submit" class="btn" data-btn>Subscribe Now</button>
-              </form>
-    
-            </div>
-    
-          </div>
+
+              <div class="upcoming-time" data-reveal="bottom">
+                <time class="time" datetime="10:00">15:00</time>
+
+                <time class="date" datetime="2023-05-25">10 May 2024</time>
+
+                <div class="social-wrapper">
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                  </a>
+
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-twitch"></ion-icon>
+                  </a>
+                </div>
+              </div>
+
+              <div class="upcoming-card right has-before" data-reveal="right">
+                <img src="images/complexity-logo.png" loading="lazy" alt="complexity logo"
+                  class="card-banner">
+
+                <h3 class="h3 card-title">Complexity</h3>
+
+                <div class="card-meta">#6 World Rank</div>
+              </div>
+            </li>
+
+            <!-- 100 Thieves vs Faze Clan -->
+
+            <li class="upcoming-item">
+              <div class="upcoming-card left has-before" data-reveal="left">
+                <img src="images/100-thieves-logo.png" loading="lazy" alt="100 thieves logo"
+                  class="card-banner">
+
+                <h3 class="h3 card-title">100 Thieves</h3>
+
+                <div class="card-meta">#1 World Rank</div>
+              </div>
+
+              <div class="upcoming-time" data-reveal="bottom">
+                <time class="time" datetime="10:00">10:00</time>
+
+                <time class="date" datetime="2023-05-25">17 May 2024</time>
+
+                <div class="social-wrapper">
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                  </a>
+
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-twitch"></ion-icon>
+                  </a>
+                </div>
+              </div>
+
+              <div class="upcoming-card right has-before" data-reveal="right">
+                <img src="images/faze-clan-logo.png" loading="lazy" alt="faze clan logo"
+                  class="card-banner">
+
+                <h3 class="h3 card-title">Faze Clan</h3>
+
+                <div class="card-meta">#3 World Rank</div>
+              </div>
+
+            </li>
+          </ol>
+
         </div>
-    
-        <div class="footer-bottom">
-          <div class="container">
-    
-            <p class="copyright">
-              &copy; 2023 ProkingK Studios All Rights Reserved.
-            </p>
-    
-          </div>
+      </section>
+
+
+      <!-- NEWS -->
+
+      <section class="section news" aria-label="our latest news" id="news">
+        <div class="container">
+
+          <p class="section-subtitle" data-reveal="bottom">Stay updated with</p>
+
+          <h2 class="h2 section-title" data-reveal="bottom">
+            News And <span class="span">Headlines</span>
+          </h2>
+
+          <p class="section-text" data-reveal="bottom">
+            The latest news and match ups right here at your finger tips to help keep you entertained and informed.
+          </p>
+
+          <ul class="news-list">
+
+            <!-- Major changes news article -->
+
+            <li data-reveal="bottom">
+              <div class="news-card">
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="images/meeting.jpg" width="600" height="400" loading="lazy"
+                    alt="people having a meeting" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="#" class="card-tag">Future</a>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="card-meta-text" datetime="2022-01-01">01 April 2024</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                      <p class="card-meta-text">Ashley Kapaso</p>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">ProkingK eLeague announces major changes for upcoming season</a>
+                  </h3>
+
+                  <p class="card-text">
+                    The ProkingK eLeague has announced major changes for the upcoming season, including a new format and increased prize pool...
+                  </p>
+
+                  <a href="#" class="link has-before">Read More</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <!-- TSM victory -->
+
+            <li data-reveal="bottom">
+              <div class="news-card">
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="images/tsm-celebration.jpg" width="600" height="400" loading="lazy"
+                    alt="tsm celebrating" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="#" class="card-tag">Match-Up</a>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="card-meta-text" datetime="2022-01-01">15 April 2022</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                      <p class="card-meta-text">Jack Mabaso</p>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">TSM Claims Victory Against Faze Clan</a>
+                  </h3>
+
+                  <p class="card-text">
+                    In an intense match-up between TSM and Faze Clan, TSM emerged victorious, solidifying their position as one of the top teams in the competitive gaming world...
+                  </p>
+
+                  <a href="#" class="link has-before">Read More</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <!-- Team Liquid vs TSM upcoming match-up -->
+
+            <li data-reveal="bottom">
+              <div class="news-card">
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="images/tsm-vs-team-liquid.jpg" width="600" height="400" loading="lazy"
+                    alt="tsm vs liquid match up" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="#" class="card-tag">Match-Up</a>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="card-meta-text" datetime="2022-01-01">20 April 2024</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                      <p class="card-meta-text">Michael Jordan</p>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Team Liquid and TSM Set to Clash in Upcoming Match</a>
+                  </h3>
+
+                  <p class="card-text">
+                    The upcoming match between Team Liquid and TSM is shaping up to 
+                    be one of the most highly-anticipated matchups of the season as 
+                    TSM want too keep thier winning streak...
+                  </p>
+
+                  <a href="#" class="link has-before">Read More</a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
         </div>
-    
-      </footer>
+      </section>
 
-      <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
-        <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
-      </a>
 
-    <script src="script.js"></script>
+    </article>
+  </main>
 
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <footer class="footer">
+
+    <div class="section footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="images/ProkingK logo.png" width="110" height="50" loading="lazy" alt="Unigine logo">
+          </a>
+
+          <p class="footer-text">
+            The #1 destination for intense entertaing matchups and a battle ground for the pros. The is The ProkingK eLeague! 
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Usefull Links</p>
+
+          <ul>
+
+            <li>
+              <a href="#tournament" class="footer-link">Tournaments</a>
+            </li>
+
+            <li>
+              <a href="" class="footer-link">Help Center</a>
+            </li>
+
+            <li>
+              <a href="" class="footer-link">Privacy and Policy</a>
+            </li>
+
+            <li>
+              <a href="" class="footer-link">Terms of Use</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Contact Us</p>
+
+          <div class="contact-item">
+            <span class="span">Location:</span>
+
+            <address class="contact-link">
+              Pretoria, South Africa
+            </address>
+          </div>
+
+          <div class="contact-item">
+            <span class="span">Join Us:</span>
+
+            <a href="mailto:info@prokingk.com" class="contact-link">info@prokingk.com</a>
+          </div>
+
+          <div class="contact-item">
+            <span class="span">Phone:</span>
+
+            <a href="tel:+27123456789" class="contact-link">+27 12 345 6789</a>
+          </div>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Newsletter Signup</p>
+
+          <form action="./index.html" method="get" class="footer-form">
+            <input type="email" name="email_address" required placeholder="Your Email" autocomplete="off"
+              class="input-field">
+
+            <button type="submit" class="btn" data-btn>Subscribe Now</button>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2023 ProkingK Studios All Rights Reserved.
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+  </a>
+
+  <script src="script.js"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 
