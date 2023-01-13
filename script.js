@@ -6,6 +6,8 @@ const addEventOnElements = function (elements, eventType, callback) {
     }
 }
 
+// Navbar Animation
+
 const navbar = document.querySelector("[data-navbar]");
 const navToggler = document.querySelector("[data-nav-toggler]");
 const navLinks = document.querySelectorAll("[data-nav-link]");
@@ -24,6 +26,8 @@ const navClose = function () {
 
 addEventOnElements(navLinks, "click", navClose);
 
+// Scroll Animation
+
 const header = document.querySelector("[data-header]");
 const backTopBtn = document.querySelector("[data-back-top-btn]");
 
@@ -41,6 +45,7 @@ const activeElement = function () {
 
 window.addEventListener("scroll", activeElement);
 
+// Button Animation
 
 const buttons = document.querySelectorAll("[data-btn]");
 
